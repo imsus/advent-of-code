@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "dependencies": {
+    "enquirer": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1"
+  },
+  "scripts": {
+    "start": "bun index.ts"
+  }
+}
