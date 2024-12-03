@@ -105,12 +105,21 @@ function calculateSimilarity(input: string): number {
     return similarityScore;
 }
 
-// Calculate distance and similarity using existing functions
-const distance = calculateDistance(input);
-const similarity = calculateSimilarity(input);
+/**
+ * Main function that calculates and formats the distance and similarity metrics.
+ * 
+ * @description Executes the distance and similarity calculations on the input data
+ * and returns a formatted string with the results.
+ * 
+ * @returns {string} Formatted string containing the distance and similarity score results
+ */
+function main(): string {
+    // Calculate distance and similarity using existing functions
+    const distance = calculateDistance(input);
+    const similarity = calculateSimilarity(input);
+
+    return `Part 1: ${distance}\nPart 2: ${similarity}`;
+}
 
 // Display the results
-console.log(`✅ Results
-   Distance: ${distance}
-   Similarity Score: ${similarity}`);
-
+console.log(main());
